@@ -1,0 +1,15 @@
+name: mcp-github
+version: 0.1.0
+description: MCP server for GitHub API integration
+author: Cloud9 Labs
+license: MIT
+
+config:
+  githubToken:
+    type: string
+    description: GitHub Personal Access Token
+    env: GITHUB_TOKEN
+    required: true
+
+runtime:
+  node: ">=18.0.0"

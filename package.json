@@ -1,0 +1,35 @@
+{
+  "name": "@cloud9-labs/mcp-github",
+  "version": "0.1.0",
+  "description": "MCP server for GitHub API integration",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "mcp-github": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build",
+    "dev": "tsc --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cloud9-labs/mcp-github.git"
+  },
+  "keywords": [
+    "mcp",
+    "github",
+    "api",
+    "model-context-protocol"
+  ],
+  "author": "Cloud9 Labs",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.5",
+    "typescript": "^5.7.3"
+  }
+}
